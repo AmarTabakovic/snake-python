@@ -1,4 +1,5 @@
 TODO:
 - Snake goes out of window, collision needs to be closer
 - Save user settings (window width/height, snake color, background color, etc.) in a textfile/json
+- Write setup package for cloning repo
 - Improve/Refactor codebase
