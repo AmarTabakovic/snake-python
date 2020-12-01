@@ -16,6 +16,8 @@ class Snake():
         self.y = CONS.GRID_HEIGHT / 2
         self.x_new = 0
         self.y_new = 0
+        # ADD IN FUTURE: self.dir = (whatever direction was last pressed)
+        # self.prev_dir
 
     def snake_on_crack(self, bool):
         if self.on_crack == True:
