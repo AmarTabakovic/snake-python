@@ -1,4 +1,4 @@
-    #!/usr/bin/python
+ #!/usr/bin/python
 import tkinter as tk
 import random
 import CONS
