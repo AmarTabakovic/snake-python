@@ -16,7 +16,8 @@ class Snake():
         self.y = CONS.GRID_HEIGHT / 2
         self.x_new = 0
         self.y_new = 0
-        # ADD IN FUTURE: self.dir = (whatever direction was last pressed)
+        
+        # TODO: self.dir = (whatever direction was last pressed)
         # self.prev_dir
 
     def snake_on_crack(self, bool):
@@ -181,6 +182,7 @@ class Game(tk.Tk):
             del self.snake.body[0]
 
     # Catch keypress events
+    # TODO: Change self.last_pressed -> self.snake.prev_dir and etc.
     def on_press(self, event):
         key = event.char
         self.previous_last_pressed = self.last_pressed
