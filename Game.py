@@ -2,7 +2,6 @@
 import tkinter as tk
 import random
 import CONS
-from PIL import Image, ImageTk
 
 class Snake():
     def __init__(self):
@@ -96,9 +95,6 @@ class Game(tk.Tk):
         #self.render = render
         #self.can.create_image(250,500,image=render, anchor="center")
         #self.can.update()
-
-
-
         img = tk.Label(self, image=render, borderwidth=0, highlightbackground=CONS.COL_BG ,highlightcolor=CONS.COL_BG, bg=CONS.COL_BG, highlightthickness=0, relief="flat")
         img.image = render
         img.place(x=250, y=500, anchor="center")"""
@@ -146,9 +142,6 @@ class Game(tk.Tk):
 
             if self.snake.body[len(self.snake.body)-1] in self.snake.body[0:len(self.snake.body)-2]:
                 self.lost = True
-
-        
-
     def check_lose(self):
         if self.lost == True:
             self.destroy()
