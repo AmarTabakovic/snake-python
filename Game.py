@@ -126,6 +126,7 @@ class Game(tk.Tk):
                 pass
 
         # If snake goes out of frame, snake comes back form the other side
+        # Needs improvement, otherwise snake sticks out of frame
         if self.snake.x >= CONS.GRID_WIDTH:
             self.snake.x = 0 - CONS.CELL_WIDTH
         elif self.snake.x < 0:
