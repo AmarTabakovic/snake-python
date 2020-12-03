@@ -89,15 +89,7 @@ class Game(tk.Tk):
         
         self.bind('<Escape>', self.stop_game)
 
-        self.geometry("450x450")
-
-        """render = ImageTk.PhotoImage(Image.open("amars-snake.jpg"))
-        #self.render = render
-        #self.can.create_image(250,500,image=render, anchor="center")
-        #self.can.update()
-        img = tk.Label(self, image=render, borderwidth=0, highlightbackground=CONS.COL_BG ,highlightcolor=CONS.COL_BG, bg=CONS.COL_BG, highlightthickness=0, relief="flat")
-        img.image = render
-        img.place(x=250, y=500, anchor="center")"""
+        self.geometry(CONS.WINDOW_SIZE)
 
         self.can = tk.Canvas(self, width=CONS.GRID_WIDTH, height=CONS.GRID_HEIGHT, bg=CONS.COL_BG)
         self.can.pack()
